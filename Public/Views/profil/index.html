@@ -1,0 +1,26 @@
+<div class="profile-wrapper d-flex justify-content-center align-items-center">
+    <form class="profile-form p-4 rounded" id="profileForm">
+        <h2 class="text-center mb-4">Mon Profil</h2>
+        <div id="profile-alert" class="alert-box d-none"></div>
+        
+        <div class="mb-3">
+            <label for="profile-username" class="form-label">Nom d'utilisateur</label>
+            <input type="text" id="profile-username" class="form-control" value="WhiteCat" disabled>
+        </div>
+        
+        <div class="mb-3">
+            <label for="profile-email" class="form-label">Email</label>
+            <input type="email" id="profile-email" class="form-control" value="whitecat@devmail.com" disabled>
+        </div>
+        
+        <div class="mb-3">
+            <label for="profile-address" class="form-label">Adresse</label>
+            <input type="text" id="profile-address" class="form-control" value="42 rue des devs, Marseille" disabled>
+        </div>
+        
+        <div class="d-flex justify-content-between gap-2 mt-4">
+            <button type="button" class="btn btn-outline-light w-50" id="edit-btn">Modifier</button>
+            <button type="submit" class="btn btn-primary w-50 d-none" id="save-btn">Enregistrer</button>
+        </div>
+    </form>
+</div>

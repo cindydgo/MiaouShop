@@ -1,0 +1,38 @@
+<div class="content-wrapper mx-auto">
+    <div class="row">
+
+        <!-- Menu de filtres -->
+        <aside class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+            <div class="filters p-3">
+                <h5 class="fw-bold mb-3">Filtres</h5>
+                <form id="FilterSidebar">
+                    <div class="mb-3">
+                        <label class="form-label">Prix max</label>
+                        <div class="d-flex justify-content-between">
+                            <span id="MinPrice">100</span>
+                            <span id="PriceVal" class="fw-bold"></span>
+                            <span id="MaxPrice"></span>
+                        </div>
+                        <input type="range" class="form-range" id="PriceSlider" step="100" min="100" max="10000">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Marque</label>
+                        <div id="BrandFilter">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </aside>
+
+
+
+        <!-- Conteneur des produits -->
+        <section class="col-12 col-md-8 col-lg-9">
+            <div class="product-list p-0 bg-transparent shadow-none border-0">
+                <div class="row g-4" id="ProductsContainer">
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>

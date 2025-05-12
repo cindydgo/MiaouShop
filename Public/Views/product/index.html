@@ -1,0 +1,55 @@
+<div class="container my-5 product-detail-wrapper">
+
+    <!-- Carte produit principale -->
+    <div class="product-card p-4 rounded shadow d-flex flex-wrap align-items-start">
+        <div class="product-image col-md-4 text-center mb-3 mb-md-0">
+            <img id="productImage" src="" alt="Image produit" class="img-fluid rounded bg-white p-3">
+        </div>
+
+        <div class="product-info col-md-8">
+            <h1 id="productName" class="display-6 fw-bold text-white mb-2"></h1>
+
+            <div id="productRating" class="mb-2">
+                <!-- étoiles dynamiques ici -->
+            </div>
+
+            <div id="productPrice" class="fs-3 fw-bold mb-4"></div>
+
+            <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+                <button id="addToCart" class="btn btn-primary">
+                    <i class="bi bi-cart-plus me-1"></i> Ajouter au panier
+                </button>
+
+                <button id="addToFavorites" class="btn btn-outline-danger">
+                    <i class="bi bi-heart me-1"></i>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section toggle : Fabriquant -->
+    <div class="toggle-section mt-4">
+        <button id="manufacturerBtn" class="btn btn-toggle w-100 text-start">
+            <i class="bi bi-building me-2"></i> Fabriquant
+        </button>
+        <div id="manufacturerSection" class="toggle-vertical bg-dark-subtle rounded mt-2" style="height: 0;">
+            <div class="d-flex align-items-center gap-3 p-3">
+                <img id="brandLogo" src="" alt="Logo marque" style="height: 50px;">
+                <span id="brandName" class="fs-5 text-black"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section toggle : Description -->
+    <div class="toggle-section mt-3">
+        <button id="descriptionBtn" class="btn btn-toggle w-100 text-start">
+            <i class="bi bi-info-circle me-2"></i> Description du produit
+        </button>
+        <div id="descriptionSection" class="toggle-vertical bg-dark-subtle rounded mt-2" style="height: 0;">
+            <div class="toggle-inner p-3">
+                <p id="productDescription" class="text-black mb-0"></p>
+            </div>
+        </div>
+    </div>
+</div>
